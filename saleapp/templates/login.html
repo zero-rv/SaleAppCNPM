@@ -1,0 +1,21 @@
+{%extends 'layout/base.html'%}
+
+{%block title%}Trang Đăng Nhập{%endblock%}
+
+{%block content%}
+<h3 class="text-info text-center mt-3">TRANG ĐĂNG NHẬP</h3>
+
+<form method="post">
+  <div class="form-floating mb-3 mt-3">
+    <input type="username" class="form-control" id="username" placeholder="Tên đăng nhập..." name="username">
+    <label for="username" class="form-label">Tên đăng nhập:</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="password" placeholder="Mật khẩu..." name="password">
+    <label for="password" class="form-label">Mật khẩu:</label>
+  </div>
+  <div class="form-floating mb-3">
+    <button type="submit" class="btn btn-info">Đăng nhập</button>
+  </div>
+</form>
+{%endblock%}
